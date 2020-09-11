@@ -1,0 +1,171 @@
+# liblouis: Swahili (Kenya) (Grade 2)
+#
+#+locale:sw
+#+type:literary
+#+grade:2
+#
+#  This file is part of liblouis.
+#
+#  liblouis is free software: you can redistribute it and/or modify it
+#  under the terms of the GNU Lesser General Public License as
+#  published by the Free Software Foundation, either version 2.1 of the
+#  License, or (at your option) any later version.
+#
+#  liblouis is distributed in the hope that it will be useful, but
+#  WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+#  Lesser General Public License for more details.
+#
+#  You should have received a copy of the GNU Lesser General Public
+#  License along with liblouis. If not, see
+#  <http://www.gnu.org/licenses/>.
+#
+
+space \x00a0 a
+include spaces.uti
+
+# Character definitions
+include latinLetterDef6Dots.uti
+include digits6Dots.uti
+include litdigits6Dots.uti
+
+sign © 45-14
+
+# Braille indicators
+numsign 3456
+# letsign 56
+capsletter 6
+begcapsword 6-6
+
+
+
+# Punctuation Definitions
+punctuation , 2
+punctuation ' 3
+punctuation ; 23
+punctuation : 25
+punctuation . 256
+punctuation ? 236
+punctuation ! 235
+punctuation " 5
+punctuation “ 236
+punctuation ” 356
+punctuation ‘ 6-236
+punctuation ’ 356-3
+punctuation ( 2356
+punctuation ) 2356
+punctuation [ 6-2356
+punctuation ] 2356-3
+punctuation - 36
+punctuation – 36-36
+punctuation — 36-36
+
+
+# Punctuation in context
+always . 256
+always , 2
+midnum : 3456
+always : 25
+midnum - 36
+always ; 23
+postpunc ” 356
+prepunc “ 236
+noback always ( 2356
+prepunc ( 2356
+postpunc ) 2356
+begword ( 2356
+endword ) 2356
+
+
+
+# Contractions
+always aa 345
+always ch 16
+always dh 2346
+always ee 26
+always end 12346
+always gh 126
+always ii 35
+always kw 12345
+always mb 1346
+always mw 123456
+always nd 1246
+always ng 346
+always ny 12456
+always nz 23456
+always oo 246
+always sh 146
+always st 34
+always sw 12356
+always th 1456
+always tw 156
+always uu 1256
+
+# dot 5 signs
+always jiji 5-245
+always mimi 5-134
+always ninyi 5-1345
+always sisi 5-234
+
+# dots 456 signs
+always baba 456-12
+always dada 456-145
+always kaka 456-13
+always mama 456-134
+always sema 456-234
+always wewe 456-2456
+always yeye 456-13456
+
+# Shortforms
+word afadhali 1-124-145
+word amani 1-134
+word anwani 1-1345
+word badala 12-145-123
+word baadaye 12-145-13456
+word basi 12-234
+word bila 12-123
+word chakula 16-13-123
+word chini 16-1345
+word elimu 15-123
+word eneo 15-1345
+word fedha 124-2346
+word gani 1245-1345
+word habari 125-12-1235
+word haraka 125-1235-13
+word ingawa 24-346
+word ishara 24-146
+word isipokuwa 24-234-1234
+word jeshi 245-146
+word kabisa 13-12-234
+word kama 13-134
+word katika 13-2345-13
+word kila 13-123
+word kuliko 13-123-13
+word labda 123-12-145
+word lakini 123-13-1345
+word lugha 123-126
+word maisha 134-146
+word nafasi 1345-124-234
+word namna 1345-134-1345
+word nini 1345-1345
+word pamoja 1234-134-245
+word pasipo 1234-234-1234
+word sababu 234-12
+word sasa 234-234
+word sehemu 234-125-134
+word sawasawa 234-2456-234
+word salamu 234-123-134
+word tayari 2345-13456-1235
+word tena 2345-1345
+word thamani 1456-134-1345
+word vema 1236-134
+word vile 1236-123
+word vizuri 1236-1356-1235
+word wala 2456-123
+word wazi 2456-1356
+word waziwazi 2456-1356-2456
+word yaani 13456-1345
+word zaidi 1356-145
+
+
+include braille-patterns.cti
