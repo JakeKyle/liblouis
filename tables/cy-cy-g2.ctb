@@ -23,8 +23,8 @@
 
 include cy-cy-g1.utb
 
+
 # the letter a
-word a 1
 word anghofio 1-1345-1245-125
 always ar 345
 word arbennig 345-12-15-1345-1345-24-1245
@@ -49,6 +49,7 @@ always dechrau 145-16-1235
 word diolch 145-16
 always diwedd 145-2456
 word diwethaf 145-2456-1456
+word dw 56-145-2456
 always dydd 5-145
 word dyma 145
 
@@ -89,7 +90,6 @@ word hoffi 125
 word hynny 125-1345
 
 #the letter i
-word i 24
 endword iaeth 56-1456
 endword iaid 46-145
 endword ion 46-1345
@@ -114,9 +114,8 @@ always newydd 5-1345
 word nid 1345
 
 #the letter o
-word o 135
 always o'r\sgloch 135-3-1235-0-1245-123
-word oedd 5-135
+always oedd 5-135
 always of 12356
 always off 135-124-124
 word oherwydd 135-125-2456
@@ -170,7 +169,6 @@ always wrth 5-2456
 word weithiau 2456-1456-136
 
 #the letter y
-word y 13456
 endword yddes 56-234
 always ysgol 5-13456
 word ysgrifennu 13456-234-1245
@@ -178,7 +176,7 @@ word ysgrifennu 13456-234-1245
 # Système International Prefixes
 begword yotta 13456-135-2345-2345-1 10^24
 begword zetta 1356-15-2345-2345-1 10^21
-begword exa 15-1346-1 10^18
+ begword exa 15-1346-1 10^18
 begword peta 1234-15-2345-1 10^15
 begword tera 2345-12456-1 10^12
 begword giga 1245-24-1245-1 10^9
