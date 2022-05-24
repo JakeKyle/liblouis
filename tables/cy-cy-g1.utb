@@ -41,57 +41,17 @@
 
 # include text_nabcc.dis All display opcodes
 
-
-include en-ueb-g1.ctb
-
 # Quotation marks
 prepunc ‘ 6-236 \x2018
 postpunc ’ 6-356 \x2019
 prepunc “ 236 \x201C
 postpunc ” 356 \x201D
 
-# letsign 56
-# noletsign aâinoruwyAÂINORUWY
+include en-ueb-g1.ctb
 
-contraction b
-contraction c
-contraction d
-contraction e
-contraction f
-contraction g
-contraction h
-contraction j
-contraction k
-contraction l
-contraction m
-contraction p
-contraction q
-contraction s
-contraction t
-contraction v
-contraction w
-contraction x
-contraction z
-
-contraction B
-contraction C
-contraction D
-contraction E
-contraction F
-contraction G
-contraction H
-contraction J
-contraction K
-contraction L
-contraction M
-contraction P
-contraction Q
-contraction S
-contraction T
-contraction V
-contraction W
-contraction X
-contraction Z
+# Letters not defined in en-ueb-chardefs
+always ch 16
+always th 1456
 
 # Accented characters
 always á 25-1
@@ -112,8 +72,4 @@ always Ô 4-135
 always Ŷ 4-13456
 always Ŵ 4-2456
 
-
-# Letters not defined in en-ueb-chardefs
-always ch 16
-always th 1456
 
