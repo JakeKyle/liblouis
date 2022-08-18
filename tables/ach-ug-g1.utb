@@ -1,0 +1,54 @@
+# liblouis: Acholi 6 Dot Grade 1 Braille Table
+#
+#-display-name: Acholi Grade 1
+#-index-name: Acholi Grade 1
+#
+#-author-name: Jake Kyle
+#-maintainer-name: Jake Kyle
+#-maintainer-email: jake@compassbraille.org
+#
+#+language: ach
+#+region: ug
+#+type: literary
+#+contraction: no
+#+grade: 1
+#+direction: both
+#
+# Copyright (C) 2022 Compass Braille, UK, www.compassbraille.org
+#
+#  This file is part of liblouis.
+#
+#  liblouis is free software: you can redistribute it and/or modify it
+#  under the terms of the GNU Lesser General Public License as
+#  published by the Free Software Foundation, either version 2.1 of the
+#  License, or (at your option) any later version.
+#
+#  liblouis is distributed in the hope that it will be useful, but
+#  WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+#  Lesser General Public License for more details.
+#
+#  You should have received a copy of the GNU Lesser General Public
+#  License along with liblouis. If not, see
+#  <http://www.gnu.org/licenses/>.
+#
+# This table was prepared using feedback from Ugandan proof readers of the
+# Acholi Bible 1985 Edition (Bible Society of Uganda) in Braille.
+#
+# Acholi uses the same 26 latin letters as English plus the letter Ŋŋ (LATIN
+# LETTER ENG: U+014A and U+014B). It uses the same rules as UEB except for
+# this letter. In UEB it is 45-1345 whereas in Acholi it must be 1345-1245 -
+# the same as the letters "ng". Backtranslation is therefore problematic but
+# there seem to be predicatble patterns as to where it is used so that this
+# table works well in both directions in most cases.
+
+
+# Ŋŋ (U+014A and U+014B LATIN LETTER ENG) 
+always ŋ 1345-1245 # ng
+
+# Exceptions to 1345-1245 -> ŋ in backtranslation
+always engi 15-1345-1245-24
+always kingi 13-24-1345-1245-24
+word wongi 2456-135-1345-1245-14
+
+include en-ueb-g1.ctb
