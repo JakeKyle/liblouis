@@ -38,9 +38,4 @@
 # Runyankore uses the same 26 latin letters as English and follows the same
 # rules as Unified English Braille Grade 1.
 
-always ‘ 6-236
-always ’ 6-356
-postpunc ” 356
-prepunc “ 236
-
 include en-ueb-g1.ctb
