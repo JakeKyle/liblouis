@@ -14,23 +14,23 @@
 #+grade: 1
 #+direction: both
 #
-# Copyright (C) 2022 Compass Braille, UK, www.compassbraille.org
+# Copyright (C) 2022 Compass Braille, UK, https://compassbraille.org
 #
-#  This file is part of liblouis.
+# This file is part of liblouis.
 #
-#  liblouis is free software: you can redistribute it and/or modify it
-#  under the terms of the GNU Lesser General Public License as
-#  published by the Free Software Foundation, either version 2.1 of the
-#  License, or (at your option) any later version.
+# liblouis is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 2.1 of
+# the License, or (at your option) any later version.
 #
-#  liblouis is distributed in the hope that it will be useful, but
-#  WITHOUT ANY WARRANTY; without even the implied warranty of
-#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
-#  Lesser General Public License for more details.
+# liblouis is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+# Lesser General Public License for more details.
 #
-#  You should have received a copy of the GNU Lesser General Public
-#  License along with liblouis. If not, see
-#  <http://www.gnu.org/licenses/>.
+# You should have received a copy of the GNU Lesser General Public
+# License along with liblouis. If not, see
+# <http://www.gnu.org/licenses/>.
 #
 # This table was prepared using feedback from Ugandan proof readers of the
 # Acholi Bible 1985 Edition (Bible Society of Uganda) in Braille.
