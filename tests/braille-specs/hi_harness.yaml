@@ -3,10 +3,64 @@ table:
   language: hi
   type: literary
   grade: 1
-  __assert-match: hi.tbl # hi-in-g1.utb
+  __assert-match: hi.tbl
+
 flags: {testmode: bothDirections}
 tests:
-  - # https://github.com/liblouis/liblouis/issues/571
-    - नोन
-    - ⠝⠕⠝
-    - xfail: {backward: true}
+
+# https://github.com/liblouis/liblouis/issues/571
+  - [नोन,⠝⠕⠝]
+
+# consonant followed by independent vowel
+  - [कई,⠅⠁⠔]
+
+# consonant followed by dependant vowel
+  - [कि,⠅⠊]
+  - [की,⠅⠔]
+  - [को,⠅⠕]
+  - [के,⠅⠑]
+  - [खी,⠨⠔]
+  - [खि,⠨⠊]
+  - [टि,⠾⠊]
+  - [टी,⠾⠔]
+  - [बी,⠃⠔]
+  - [भी,⠘⠔]
+  - [खी,⠨⠔]
+  - [खो,⠨⠕]
+  - [कृपया,⠅⠐⠗⠏⠽⠜]
+  
+# When braille dots of swarakshara (independent vowel) comes after a
+# matra (dependent vowel) or swarakshara, then the back translation of
+# that has to be as  swarakshra and not matra.
+  - [काई,⠅⠜⠔]
+  - [मिठाई,⠍⠊⠺⠜⠔]
+  - [पाओ,⠏⠜⠕]
+
+# Backtranslation of halant
+  - [क्,⠈⠅]
+  
+# add Catherine's examples here
+
+# Backtranslation of nukhta
+  - [क़,⠐⠅]
+  
+# Backtranslation of NNA
+  - [दक्षिण,⠙⠟⠊⠼]
+  - [महत्वपूर्ण,⠍⠓⠈⠞⠧⠏⠳⠈⠗⠼]
+
+  -
+    - ण आम तौर पर शब्दों के आरम्भ में नहीं आता है।
+    - ⠼⠀⠜⠍⠀⠞⠪⠗⠀⠏⠗⠀⠩⠈⠃⠙⠕⠰⠀⠅⠑⠀⠜⠗⠈⠍⠘⠀⠍⠑⠰⠀⠝⠓⠔⠰⠀⠜⠞⠜⠀⠓⠌⠲
+  -
+    - ‘ण’ आम तौर पर शब्दों के आरम्भ में नहीं आता है।
+    - ⠠⠦⠼⠴⠄⠀⠜⠍⠀⠞⠪⠗⠀⠏⠗⠀⠩⠈⠃⠙⠕⠰⠀⠅⠑⠀⠜⠗⠈⠍⠘⠀⠍⠑⠰⠀⠝⠓⠔⠰⠀⠜⠞⠜⠀⠓⠌⠲
+
+
+
+
+
+
+
+
+
+

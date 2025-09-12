@@ -79,15 +79,15 @@ tests:
     - ಮಲ್ಲಿಗೆ ಹೂ ಚೆಂದ. 
     - ⠍⠈⠇⠇⠊⠛⠢⠀⠓⠳⠀⠉⠢⠰⠙⠲
 
-  - # \x0CE0 ೠ KANNADA LETTER VOCALIC RR = dots 6-1235
+  - # \x0CE0 ೠ KANNADA LETTER VOCALIC RR = dots 25-1235
     - ೠ ಕನ್ನಡ ವರ್ಣಮಾಲೆಯ ಎಂಟನೇ ಅಕ್ಷರವಾಗಿದೆ.
-    - ⠠⠗⠀⠅⠈⠝⠝⠫⠀⠧⠈⠗⠼⠍⠜⠇⠢⠽⠀⠢⠰⠾⠝⠑⠀⠁⠟⠗⠧⠜⠛⠊⠙⠢⠲
+    - ⠒⠗⠀⠅⠈⠝⠝⠫⠀⠧⠈⠗⠼⠍⠜⠇⠢⠽⠀⠢⠰⠾⠝⠑⠀⠁⠟⠗⠧⠜⠛⠊⠙⠢⠲
 
-  - # \x0CAB\x0CBC ಫ಼ KANNADA LETTER PHA + KANNADA SIGN NUKTA = dots124
+  - # \x0CAB\x0CBC ಫ಼ KANNADA LETTER PHA + KANNADA SIGN NUKTA = dots 5-124
     - ಫ಼ಾರಿನ್
-    - ⠋⠜⠗⠊⠈⠝
+    - ⠐⠋⠜⠗⠊⠈⠝
 
-  - # \x0C9C\x0CBC ಜ಼ KANNADA LETTER JA + KANNADA SIGN NUKTA = dots 1356
+  - # \x0C9C\x0CBC ಜ಼ KANNADA LETTER JA + KANNADA SIGN NUKTA = dots 5-245
     - ಜ಼ೂ
-    - ⠵⠳
+    - ⠐⠚⠳
 
