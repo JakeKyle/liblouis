@@ -49,7 +49,6 @@
 # Together they go under the name of Braille Section Team, Anna
 # Centenary Library as the table was tested on the Braille display
 # that was available in the Anna Centinary Library, Chennai.
-# This table was modified by Dipendra Manocha and Sreeja Param on February 14, 2025 to encorporate changes adopted in Bharti braille code released on January 4, 2025 by DEPWD, Government of India
 
 include text_nabcc.dis
 include braille-patterns.cti # unicode braille.
@@ -61,85 +60,78 @@ punctuation	\x201d 356-3 #right quote
 
 include en-us-g1.ctb
 
-letter	\x0b82	56	# TAMIL SIGN ANUSVARA
-letter	\x0b83	6	# TAMIL SIGN VISARGA
-letter	\x0b85	1	# TAMIL LETTER A
-letter	\x0b86	345	# TAMIL LETTER AA
-letter	\x0b87	24	# TAMIL LETTER I
-letter	\x0b88	35	# TAMIL LETTER II
-letter	\x0b89	136	# TAMIL LETTER U
-letter	\x0b8a	1256	# TAMIL LETTER UU
+sign	\x0b82	56	# TAMIL SIGN ANUSVARA
+sign	\x0b83	6	# TAMIL SIGN VISARGA
+sign	\x0b85	1	# TAMIL sign A
+sign	\x0b86	345	# TAMIL sign AA
+sign	\x0b87	24	# TAMIL sign I
+sign	\x0b88	35	# TAMIL sign II
+sign	\x0b89	136	# TAMIL sign U
+sign	\x0b8a	1256	# TAMIL sign UU
 
-letter	\x0b8e	26	# TAMIL LETTER E
+sign	\x0b8e	26	# TAMIL sign E
 
-letter	\x0b8f	15	# TAMIL LETTER EE
-letter	\x0b90	34	# TAMIL LETTER AI
+sign	\x0b8f	15	# TAMIL sign EE
+sign	\x0b90	34	# TAMIL sign AI
 
-letter	\x0b92	1346	# TAMIL LETTER O
+sign	\x0b92	1346	# TAMIL sign O
 
-letter	\x0b93	135	# TAMIL LETTER OO
-letter	\x0b94	246	# TAMIL LETTER AU
+letter	\x0b93	135	# TAMIL sign OO
+letter	\x0b94	246	# TAMIL sign AU
+letter	\x0b95	13	# TAMIL sign KA
+letter	\x0b99	346	# TAMIL sign NGA
+letter	\x0b9a	14	# TAMIL sign CA
+letter	\x0b9c	245	# TAMIL sign JA
+letter	\x0b9e	25	# TAMIL sign NYA
+letter	\x0b9f	23456	# TAMIL sign TTA
+letter	\x0ba3	3456	# TAMIL sign NNA
+letter	\x0ba4	2345	# TAMIL sign TA
+letter	\x0ba8	1345	# TAMIL sign NA
+letter	\x0ba9	56	# TAMIL sign NNNA
+letter	\x0baa	1234	# TAMIL sign PA
+letter	\x0bae	134	# TAMIL sign MA
+letter	\x0baf	13456	# TAMIL sign YA
+letter	\x0bb0	1235	# TAMIL sign RA
 
-#Consonents
-letter	\x0b95	13	# TAMIL LETTER KA
-letter	\x0b99	346	# TAMIL LETTER NGA
-letter	\x0b9a	14	# TAMIL LETTER CHA
-letter	\x0b9c	245	# TAMIL LETTER JA
-letter	\x0b9e	25	# TAMIL LETTER NYA
-letter	\x0b9f	23456	# TAMIL LETTER TTA
-letter	\x0ba3	3456	# TAMIL LETTER NNA
-letter	\x0ba4	2345	# TAMIL LETTER TA
-letter	\x0ba8	1345	# TAMIL LETTER NA
-letter	\x0ba9	56	# TAMIL LETTER NNNA
-letter	\x0baa	1234	# TAMIL LETTER PA
-letter	\x0bae	134	# TAMIL LETTER MA
-letter	\x0baf	13456	# TAMIL LETTER YA
-letter	\x0bb0	1235	# TAMIL LETTER RA
+sign	\x0bb1	12456	# TAMIL sign RRA
 
-letter	\x0bb1	12456	# TAMIL LETTER RRA
+sign	\x0bb2	123	# TAMIL sign LA
 
-letter	\x0bb2	123	# TAMIL LETTER LA
+sign	\x0bb3	456	# TAMIL sign LLA
 
-letter	\x0bb3	456	# TAMIL LETTER LLA
+sign	\x0bb4	12356	# TAMIL sign LLLA
 
-letter	\x0bb4	12356	# TAMIL LETTER LLLA
+sign	\x0bb5	1236	# TAMIL sign VA
+sign	\x0bb6	146	# TAMIL sign SHA
+sign	\x0bb7	12346	# TAMIL sign SSA
+sign	\x0bb8	234	# TAMIL sign SA
+sign	\x0bb9	125	# TAMIL sign HA
+sign	\x0bbe	345	# TAMIL VOWEL SIGN AA
+sign	\x0bbf	24	# TAMIL VOWEL SIGN I
+sign	\x0bc0	35	# TAMIL VOWEL SIGN II
+sign	\x0bc1	136	# TAMIL VOWEL SIGN U
+sign	\x0bc2	1256	# TAMIL VOWEL SIGN UU
 
-letter	\x0bb5	1236	# TAMIL LETTER VA
-letter	\x0bb6	146	# TAMIL LETTER SHA
-letter	\x0bb7	12346	# TAMIL LETTER SSA
-letter	\x0bb8	234	# TAMIL LETTER SA
-letter	\x0bb9	125	# TAMIL LETTER HA
+sign	\x0bc6	26	# TAMIL VOWEL SIGN E
 
-letter	\x0bbe	345	# TAMIL VOWEL SIGN AA
-letter	\x0bbf	24	# TAMIL VOWEL SIGN I
-letter	\x0bc0	35	# TAMIL VOWEL SIGN II
-letter	\x0bc1	136	# TAMIL VOWEL SIGN U
-letter	\x0bc2	1256	# TAMIL VOWEL SIGN UU
+sign	\x0bc7	15	# TAMIL VOWEL SIGN EE
+sign	\x0bc8	34	# TAMIL VOWEL SIGN AI
 
-letter	\x0bc6	26	# TAMIL VOWEL SIGN E
+sign	\x0bca	1346	# TAMIL VOWEL SIGN O
 
-letter	\x0bc7	15	# TAMIL VOWEL SIGN EE
-letter	\x0bc8	34	# TAMIL VOWEL SIGN AI
-
-letter	\x0bca	1346	# TAMIL VOWEL SIGN O
-
-letter	\x0bcb	135	# TAMIL VOWEL SIGN OO
-letter	\x0bcc	246	# TAMIL VOWEL SIGN AU
-letter	\x0bcd	4	# TAMIL SIGN VIRAMA
-letter	\x0bd0	5-1256 # Tamil letter Om	
-
-letter	\x0bd7	246 # Tamil sign Au length mark	
-
-litdigit	\x0be6	245	# TAMIL DIGIT ZERO
-litdigit	\x0be7	1	# TAMIL DIGIT ONE
-litdigit	\x0be8	12	# TAMIL DIGIT TWO
-litdigit	\x0be9	14	# TAMIL DIGIT THREE
-litdigit	\x0bea	145	# TAMIL DIGIT FOUR
-litdigit	\x0beb	15	# TAMIL DIGIT FIVE
-litdigit	\x0bec	124	# TAMIL DIGIT SIX
-litdigit	\x0bed	1245	# TAMIL DIGIT SEVEN
-litdigit	\x0bee	125	# TAMIL DIGIT EIGHT
-litdigit	\x0bef	24	# TAMIL DIGIT NINE
+sign	\x0bcb	135	# TAMIL VOWEL SIGN OO
+sign	\x0bcc	246	# TAMIL VOWEL SIGN AU
+sign	\x0bcd	4	# TAMIL SIGN VIRAMA
+sign	\x0be6	245	# TAMIL DIGIT ZERO
+sign	\x0be7	1	# TAMIL DIGIT ONE
+sign	\x0be8	12	# TAMIL DIGIT TWO
+sign	\x0be9	14	# TAMIL DIGIT THREE
+sign	\x0bea	145	# TAMIL DIGIT FOUR
+sign	\x0beb	15	# TAMIL DIGIT FIVE
+sign	\x0bec	124	# TAMIL DIGIT SIX
+sign	\x0bed	1245	# TAMIL DIGIT SEVEN
+sign	\x0bee	125	# TAMIL DIGIT EIGHT
+sign	\x0bef	24	# TAMIL DIGIT NINE
 
 #--------
 # half characters
@@ -169,7 +161,7 @@ always \x0bb9\x0bcd 4-125
 
 # words and partwords
 # sri
-always \x0bb8\x0bcd\x0bb0\x0bc0 4-234-1235-35
+word \x0bb8\x0bcd\x0bb0\x0bc0 234
 
 always \x0b95\x0bcd\x0bb7 12345   #ksh
 always \x0b95\x0bcd\x0bb7\x0bcd 4-12345   #ksh with varama

@@ -19,13 +19,12 @@
 # License along with liblouis. If not, see
 # <http://www.gnu.org/licenses/>.
 
-# This table is built and maintained under an activity of Braille Council of India
-# Contributors: Dipendra Manocha, Sreeja, Dinesh Kaushal, Mesar Hameed
-# Updated on May 5, 2014
-# To report any bugs or any suggestion, please write to d@saksham.org and sreeja.param@gmail.com
+# This table was built and maintained under an activity of Braille Council of India and then modified after release of new Bharti braille code which was released on January 4, 2025
+# Contributors: Dipendra Manocha, Sreeja, Dinesh Kaushal, Mesar Hameed, 
+# contributions made  on July 31, 2020 by Jake Kyle,
+# Updated on February 13, 2025 by Dipendra Manocha and Sreeja Param
+# To report any bugs or any suggestion, please write to jake@compassbraille.org, dipendra@saksham.org and sreeja@saksham.org
 #
-# Updated on July 31, 2020 by Jake Kyle,
-# Write to jake@compassbraille.org to report feedback on this update.
 
 include braille-patterns.cti
 
@@ -41,6 +40,7 @@ noback postpunc ' 356-3
 postpunc ’ 356-3
 
 # Character definitions
+letter	\x0D01	3	# MALAYALAM SIGN Candra bindu
 letter	\x0D02	56	# MALAYALAM SIGN ANUSVARA
 letter	\x0D03	6	# MALAYALAM SIGN VISARGA
 letter	\x0D05	1	# MALAYALAM LETTER A
@@ -71,8 +71,8 @@ letter	\x0D1B	16	# MALAYALAM LETTER CHA= CHHA
 letter	\x0D1C	245	# MALAYALAM LETTER JA
 letter	\x0D1D	356	# MALAYALAM LETTER JHA
 letter	\x0D1E	25	# MALAYALAM LETTER NYA= NHA
-letter	\x0D1F	23456	# MALAYALAM LETTER TTA= TA
 
+letter	\x0D1F	23456	# MALAYALAM LETTER TTA= TA
 letter	\x0D20	2456	# MALAYALAM LETTER TTHA= TTA
 letter	\x0D21	1246	# MALAYALAM LETTER DDA= HARD DA
 letter	\x0D22	123456	# MALAYALAM LETTER DDHA= HARD DDA
@@ -85,12 +85,12 @@ letter	\x0D27	2346	# MALAYALAM LETTER DHA= SOFT DDA
 letter	\x0D28	1345	# MALAYALAM LETTER NA
 
 letter	\x0D2A	1234	# MALAYALAM LETTER PA
-letter	\x0D2B	235	# MALAYALAM LETTER PHA
+letter	\x0D2B	124	# MALAYALAM LETTER PHA
 letter	\x0D2C	12	# MALAYALAM LETTER BA
 letter	\x0D2D	45	# MALAYALAM LETTER BHA
 letter	\x0D2E	134	# MALAYALAM LETTER MA
-letter	\x0D2F	13456	# MALAYALAM LETTER YA
 
+letter	\x0D2F	13456	# MALAYALAM LETTER YA
 letter	\x0D30	1235	# MALAYALAM LETTER RA
 letter	\x0D31	12456	# MALAYALAM LETTER RRA
 letter	\x0D32	123	# MALAYALAM LETTER LA
@@ -101,9 +101,11 @@ letter	\x0D36	146	# MALAYALAM LETTER SHA= SOFT SHA
 letter	\x0D37	12346	# MALAYALAM LETTER SSA= SHA
 letter	\x0D38	234	# MALAYALAM LETTER SA
 letter	\x0D39	125	# MALAYALAM LETTER HA
+
+letter	\x0D3D	2	# MALAYALAM sign avagraha
+
 letter	\x0D3E	345	# MALAYALAM VOWEL SIGN AA
 letter	\x0D3F	24	# MALAYALAM VOWEL SIGN I
-
 letter	\x0D40	35	# MALAYALAM VOWEL SIGN II
 letter	\x0D41	136	# MALAYALAM VOWEL SIGN U
 letter	\x0D42	1256	# MALAYALAM VOWEL SIGN UU
@@ -115,7 +117,8 @@ letter	\x0D48	34	# MALAYALAM VOWEL SIGN AI
 letter	\x0D4A	1346	# MALAYALAM VOWEL SIGN O= 0D46 ? and 0D3E ?
 letter	\x0D4B	135	# MALAYALAM VOWEL SIGN OO= 0D47 ? AND 0D3E ?
 letter	\x0D4C	246	# MALAYALAM VOWEL SIGN AU
-letter	\x0D4D	3	# MALAYALAM SIGN VIRAMA= chandrakkala (the preferred name)= vowel half U
+
+letter	\x0D4D	4	# MALAYALAM SIGN VIRAMA: candrakkala (the preferred name), vowel half-u
 
 letter	\x0D57	246	# MALAYALAM AU LENGTH MARK
 
@@ -127,6 +130,10 @@ punctuation	\x0D64	256 	# RESERVED-0964 #Devnagari danda
 punctuation	\x0D65	256-256	# RESERVED-0965 #Devnagari double danda
 
 # digits
+include litdigits6Dots.uti # to prefer western digits and signs in backtranslation.
+sign \x00BC 3456-1-256 # VULGAR FRACTION ONE QUARTER
+sign \x00BD 3456-1-23 # VULGAR FRACTION ONE HALF
+sign \x00BE 3456-14-256 # VULGAR FRACTION THREE QUARTERS
 
 digit	\x0D66	245	# MALAYALAM DIGIT ZERO
 digit	\x0D67	1	# MALAYALAM DIGIT ONE
@@ -138,12 +145,6 @@ digit	\x0D6C	124	# MALAYALAM DIGIT SIX
 digit	\x0D6D	1245	# MALAYALAM DIGIT SEVEN
 digit	\x0D6E	125	# MALAYALAM DIGIT EIGHT
 digit	\x0D6F	24	# MALAYALAM DIGIT NINE
-digit	\x0D70	1-245	# MALAYALAM NUMBER TEN
-digit	\x0D71	1-245-245	# MALAYALAM NUMBER ONE HUNDRED
-digit	\x0D72	1-245-245-245	# MALAYALAM NUMBER ONE THOUSAND
-digit	\x0D73	1-34-145	# MALAYALAM FRACTION ONE QUARTER
-digit	\x0D74	1-34-12	# MALAYALAM FRACTION ONE HALF
-digit	\x0D75	14-34-145	# MALAYALAM FRACTION THREE QUARTERS
 
 litdigit	\x0D66	245	# MALAYALAM DIGIT ZERO
 litdigit	\x0D67	1	# MALAYALAM DIGIT ONE
@@ -155,23 +156,17 @@ litdigit	\x0D6C	124	# MALAYALAM DIGIT SIX
 litdigit	\x0D6D	1245	# MALAYALAM DIGIT SEVEN
 litdigit	\x0D6E	125	# MALAYALAM DIGIT EIGHT
 litdigit	\x0D6F	24	# MALAYALAM DIGIT NINE
-litdigit	\x0D70	1-245	# MALAYALAM NUMBER TEN
-litdigit	\x0D71	1-245-245	# MALAYALAM NUMBER ONE HUNDRED
-litdigit	\x0D72	1-245-245-245	# MALAYALAM NUMBER ONE THOUSAND
-litdigit	\x0D73	1-34-145	# MALAYALAM FRACTION ONE QUARTER
-litdigit	\x0D74	1-34-12	# MALAYALAM FRACTION ONE HALF
-litdigit	\x0D75	14-34-145	# MALAYALAM FRACTION THREE QUARTERS
+
+noback sign	\x0D70	3456-1-245	# MALAYALAM NUMBER TEN
+noback sign	\x0D71	3456-1-245-245	# MALAYALAM NUMBER ONE HUNDRED
+noback sign	\x0D72	3456-1-245-245-245	# MALAYALAM NUMBER ONE THOUSAND
+noback sign	\x0D73	3456-1-256	# MALAYALAM FRACTION ONE QUARTER
+noback sign	\x0D74	3456-1-23	# MALAYALAM FRACTION ONE HALF
+noback sign	\x0D75	3456-14-256	# MALAYALAM FRACTION THREE QUARTERS
 
 # For successful back-translation of numbers
 
 midendword	\x0D23	3456	# MALAYALAM LETTER NNA= HARD NA
-sufword	\x0D70	3456-1-245	# MALAYALAM NUMBER TEN
-sufword	\x0D71	3456-1-245-245	# MALAYALAM NUMBER ONE HUNDRED
-sufword	\x0D72	3456-1-245-245-245	# MALAYALAM NUMBER ONE THOUSAND
-sufword	\x0D73	3456-1-34-145	# MALAYALAM FRACTION ONE QUARTER
-sufword	\x0D74	3456-1-34-12	# MALAYALAM FRACTION ONE HALF
-sufword	\x0D75	3456-14-34-145	# MALAYALAM FRACTION THREE QUARTERS
-
 
 # Chillus
 
@@ -216,7 +211,8 @@ always	\x0D4B	135		# MALAYALAM VOWEL SIGN OO
 always	\x0D57	246		# MALAYALAM AU LENGTH MARK
 
 
-# Chandrakkala at end of word: dot 3 after consonant for 'half-u' sound - need to use 'prfword' - 'either a word or end of word' in case word is hyphenated
+# Chandrakkala at end of word: dot 3 after consonant for 'half-u' sound - need to use 'prfword' - 'either a word or end of word' in case word is hyphenated 
+always \x0D4D	3
 
 prfword \x0D15\x0D4D	13-3	# MALAYALAM LETTER KA
 prfword \x0D17\x0D4D	1245-3	# MALAYALAM LETTER GA
@@ -231,7 +227,7 @@ prfword \x0D24\x0D4D	2345-3	# MALAYALAM LETTER TA= THA
 prfword \x0D26\x0D4D	145-3	# MALAYALAM LETTER DA= SOFT DA
 prfword \x0D28\x0D4D	1345-3	# MALAYALAM LETTER NA
 prfword \x0D2A\x0D4D	1234-3	# MALAYALAM LETTER PA
-prfword \x0D2B\x0D4D	235-3	# MALAYALAM LETTER PHA
+prfword \x0D2B\x0D4D	124-3	# MALAYALAM LETTER PHA
 prfword \x0D2C\x0D4D	12-3	# MALAYALAM LETTER BA
 
 prfword \x0D31\x0D4D	12456-3	# MALAYALAM LETTER RRA
@@ -272,7 +268,7 @@ noback always	\x0D28\x0D4D	4-1345	# MALAYALAM LETTER NA
 begmidword	\x0D28\x0D4D	4-1345		# MALAYALAM LETTER NA
 
 always	\x0D2A\x0D4D	4-1234	# MALAYALAM LETTER PA
-always	\x0D2B\x0D4D	4-235	# MALAYALAM LETTER PHA
+always	\x0D2B\x0D4D	4-124	# MALAYALAM LETTER PHA
 always	\x0D2C\x0D4D	4-12	# MALAYALAM LETTER BA
 always	\x0D2D\x0D4D	4-45	# MALAYALAM LETTER BHA
 always	\x0D2E\x0D4D	4-134	# MALAYALAM LETTER MA
@@ -298,6 +294,7 @@ always	\x0D63\x0D4D	4-6-123 	# MALAYALAM VOWEL SIGN VOCALIC LL
 
 # Chillus at end of word
 endword	\x0D7B	4-1345				# MALAYALAM LETTER CHILLU N
+endword	\x0D7B\x002C	4-1345-2				# MALAYALAM LETTER CHILLU N PLUS COMMA
 endword	\x0D7B\x003A	4-1345-25	# MALAYALAM LETTER CHILLU N PLUS COLON
 endword	\x0D7D	4-123				# MALAYALAM LETTER CHILLU L
 endword	\x0D7E	4-456				# MALAYALAM LETTER CHILLU LL
@@ -319,7 +316,7 @@ always \x0D32\x0D4D\x0D2A	4-123-1234
 always \x0D32\x0D4D\x0D2F	4-123-13456
 always \x0D32\x0D4D\x0D32	4-123-123
 always \x0D32\x0D4D\x0D15\x0D47 4-123-13-15
-always \x0D32\x0D4D\x0D2B	4-123-235
+always \x0D32\x0D4D\x0D2B	4-123-124
 always \x0D32\x0D4D\x0D15\x0D2A\x0D4D 4-123-13-4-1234
 always \x0D32\x0D4D\x0D15\x0D41 4-123-13-136
 always \x0D32\x0D4D\x0D2E 4-123-134
@@ -410,7 +407,7 @@ before MalayalamVowel always	\x0D1F   23456-1	# MALAYALAM LETTER TTA= TA
 before MalayalamVowel always	\x0D20 	  2456-1	# MALAYALAM LETTER TTHA= TTA
 before MalayalamVowel always	\x0D21 	  1246-1	# MALAYALAM LETTER DDA= HARD DA
 before MalayalamVowel always	\x0D22 	  123456-1	# MALAYALAM LETTER DDHA= HARD DDA
-before MalayalamVowel always	\x0D23 	  3456-1	# MALAYALAM LETTER NNA= HARD NA
+before MalayalamVowel midendword	\x0D23 	  3456-1	# MALAYALAM LETTER NNA= HARD NA
 
 before MalayalamVowel always	\x0D24 	  2345-1	# MALAYALAM LETTER TA= THA
 before MalayalamVowel always	\x0D25 	  1456-1	# MALAYALAM LETTER THA= TTHA
@@ -419,7 +416,7 @@ before MalayalamVowel always	\x0D27 	  2346-1 # MALAYALAM LETTER DHA= SOFT DDA
 before MalayalamVowel always	\x0D28 	  1345-1	# MALAYALAM LETTER NA
 
 before MalayalamVowel always	\x0D2A 	  1234-1	# MALAYALAM LETTER PA
-before MalayalamVowel always	\x0D2B 	  235-1	# MALAYALAM LETTER PHA
+before MalayalamVowel always	\x0D2B 	  124-1	# MALAYALAM LETTER PHA
 before MalayalamVowel always	\x0D2C 	  12-1	# MALAYALAM LETTER BA
 before MalayalamVowel always	\x0D2D 	  45-1	# MALAYALAM LETTER BHA
 before MalayalamVowel always	\x0D2E 	  134-1	# MALAYALAM LETTER MA

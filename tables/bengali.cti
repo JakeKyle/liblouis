@@ -18,10 +18,10 @@
 # License along with liblouis. If not, see
 # <http://www.gnu.org/licenses/>.
 
-# This table is built and maintained under an activity of Braille Council of India
+# This table was built and maintained under an activity of Braille Council of India and then modified after release of new Bharti braille code which was released on January 4, 2025
 # Contributors: Dipendra Manocha, Sreeja, Dinesh Kaushal, Mesar Hameed
-# Last updated on May 5, 2014
-# To report any bugs or any suggestion, please write to d@saksham.org and sreeja.param@gmail.com
+# Last updated on January 28, 2025
+# To report any bugs or any suggestion, please write to dipendra@saksham.org and sreeja@saksham.org
 
 include braille-patterns.cti
 
@@ -49,7 +49,7 @@ letter   \x0997	1245	# Bengali Letter GA
 letter   \x0998	126	# Bengali Letter GHA
 letter   \x0999	346	# Bengali Letter NGA
 
-letter   \x099A	14	# Bengali Letter CA
+letter   \x099A	14	# Bengali Letter ChA
 letter   \x099B	16	# Bengali Letter CHA
 letter   \x099C	245	# Bengali Letter JA
 letter   \x099D	356	# Bengali Letter JHA
@@ -68,7 +68,7 @@ letter   \x09A7	2346	# Bengali Letter DHA
 letter   \x09A8	1345	# Bengali Letter NA
 
 letter   \x09AA	1234	# Bengali Letter PA
-letter   \x09AB	235	# Bengali Letter PHA
+letter   \x09AB	124	# Bengali Letter PHA
 letter   \x09AC	12	# Bengali Letter BA = Bengali va, wa
 letter   \x09AD	45	# Bengali Letter BHA
 letter   \x09AE	134	# Bengali Letter MA
@@ -124,6 +124,9 @@ litdigit  \x09EF	24	# BENGALI DIGIT NINE
 letter     \x09F0	1235	# BENGALI LETTER RA WITH MIDDLE DIAGONAL (ASSAMESE)
 letter    \x09F1    1236	# BENGALI LETTER RA WITH LOWER DIAGONAL =  BENGALI LETTER VA WITH LOWER DIAGONAL (1.0) ASSAMESE
 
+letter    \x09F2    5-123	# BENGALI mark for Rupee
+letter    \x09F3    6-123	# BENGALI Sign Rupee
+
 replace \x200d
 
 # Half characters 
@@ -133,7 +136,7 @@ always	\x0997\x09cD   	4-1245	# Bengali Letter GA
 always	\x0998\x09cD   	4-126	# Bengali Letter GHA
 always	\x0999\x09cD   	4-346	# Bengali Letter NGA
 
-always	\x099A\x09cD   	4-14	# Bengali Letter CA
+always	\x099A\x09cD   	4-14	# Bengali Letter ChA
 always	\x099B\x09cD   	4-16	# Bengali Letter CHA
 always	\x099C\x09cD   	4-245	# Bengali Letter JA
 always	\x099D\x09cD   	4-356	# Bengali Letter JHA
@@ -152,7 +155,7 @@ always	\x09A7\x09cD   	4-2346	# Bengali Letter DHA
 always	\x09A8\x09cD   	4-1345	# Bengali Letter NA
 
 always	\x09AA\x09cD   	4-1234	# Bengali Letter PA
-always	\x09AB\x09cD   	4-235	# Bengali Letter PHA
+always	\x09AB\x09cD   	4-124	# Bengali Letter PHA
 always	\x09AC\x09cD   	4-12	# Bengali Letter BA =  Bengali va, wa
 always	\x09AD\x09cD   	4-45	# Bengali Letter BHA
 always	\x09AE\x09cD   	4-134	# Bengali Letter MA
@@ -213,7 +216,7 @@ before BengaliVowel always \x09A7 2346-1 # Bengali dha
 before BengaliVowel always \x09A8 1345-1 #Bengali na
 
 before BengaliVowel always \x09AA 1234-1 # Bengali pa
-before BengaliVowel always \x09AB 235-1 # Bengali pha
+before BengaliVowel always \x09AB 124-1 # Bengali pha
 before BengaliVowel always \x09AC 12-1 # Bengali ba
 before BengaliVowel always \x09AD 45-1 # Bengali bha
 before BengaliVowel always \x09AE 134-1 #Bengali ma
@@ -236,3 +239,20 @@ before BengaliVowel always	\x09E3 	6-123-1	# BENGALIC LETTER VOCALIC LL
 before BengaliVowel always	\x09F0 	1235-1	# BENGALI LETTER RA WITH MIDDLE DIAGONAL (ASSAMESE)
 before BengaliVowel always	\x09F1 	1236-1	# BENGALI LETTER RA WITH LOWER DIAGONAL =  BENGALI LETTER VA WITH LOWER DIAGONAL (1.0) ASSAMESE
 always \x0964 256	dari character
+
+# Nukhta
+
+letter \x09BC 5 # Bengali Sign Nukhta
+
+
+always \x0995\x09BC 5-13 #"ka with nukhta"
+always \x0996\x09BC 5-46 #"kha with nukhta"
+always \x0997\x09BC 5-1245 #"ga with nukhta"
+always \x099c\x09BC 5-245 #"ja with nukhta"
+always \x09A1\x09BC 12456 #"da with nukhta"
+always \x09A2\x09BC 5-12456 #"dhaa with nukhta"
+always \x09AB\x09BC 5-124 #"fa with nukhta"
+always \x09AF\x09BC 26 #"ya with nukhta"
+
+replace \x09BC
+

@@ -18,10 +18,10 @@
 # License along with liblouis. If not, see
 # <http://www.gnu.org/licenses/>.
 
-# This table is built and maintained under an activity of Braille Council of India
+# This table was built and maintained under an activity of Braille Council of India and then modified after release of new Bharti braille code which was released on January 4, 2025
 # Contributors: Dipendra Manocha, Sreeja, Dinesh Kaushal, Mesar Hameed
-# Last updated on May 5, 2014
-# To report any bugs or any suggestion, please write to d@saksham.org and sreeja.param@gmail.com
+# Last updated on February 14, 2025
+# To report any bugs or any suggestion, please write to dipendra@saksham.org and sreeja@saksham.org
 
 include braille-patterns.cti
 
@@ -71,7 +71,7 @@ letter   \x0C27	2346	# TELUGU LETTER DHA
 letter   \x0C28	1345	# TELUGU LETTER NA
 
 letter   \x0C2A	1234	# TELUGU LETTER PA
-letter   \x0C2B	235	# TELUGU LETTER PHA
+letter   \x0C2B	124	# TELUGU LETTER PHA
 letter   \x0C2C	12	# TELUGU LETTER BA
 letter   \x0C2D	45	# TELUGU LETTER BHA
 letter   \x0C2E	134	# TELUGU LETTER MA
@@ -85,6 +85,10 @@ letter   \x0C35	1236	# TELUGU LETTER VA
 letter   \x0C36	146	# TELUGU LETTER SHA
 letter   \x0C37	12346	# TELUGU LETTER SSA
 letter   \x0C38	234	# TELUGU LETTER SA
+letter   \x0C39	125	# TELUGU LETTER HA
+
+letter   \x0C3D	2	# TELUGU LETTER AVAGRAHA
+
 letter   \x0C3E	345	# TELUGU VOWEL SIGN AA
 letter   \x0C3F	24	# TELUGU VOWEL SIGN I
 letter   \x0C40	35	# TELUGU VOWEL SIGN II
@@ -99,7 +103,14 @@ letter   \x0C48	34	# TELUGU VOWEL SIGN AI = 0C46 AND 0C56
 letter   \x0C4A	1346	# TELUGU VOWEL SIGN O
 letter   \x0C4B	135	# TELUGU VOWEL SIGN OO
 letter   \x0C4C	246	# TELUGU VOWEL SIGN AU
+
 letter   \x0C4D	4	# TELUGU SIGN VIRAMA= HALANT (THE PREFERRED NAME)
+
+letter   \x0C58	6-14	# TELUGU LETTER TSA 
+letter   \x0C59	6-245	# TELUGU LETTER DZA 
+letter   \x0C5A	6-1235	# TELUGU LETTER RRRA 
+
+letter   \x0C60	6-1235	# TELUGU LETTER VOCALIC r 
 
 # Digits
 litdigit   \x0C66	245	# TELUGU DIGIT ZERO
@@ -150,7 +161,7 @@ always   \x0C27\x0C4D	 4-2346	# TELUGU LETTER DHA
 always   \x0C28\x0C4D	 4-1345	# TELUGU LETTER NA
 
 always   \x0C2A\x0C4D	 4-1234	# TELUGU LETTER PA
-always   \x0C2B\x0C4D	 4-235	# TELUGU LETTER PHA
+always   \x0C2B\x0C4D	 4-124	# TELUGU LETTER PHA
 always   \x0C2C\x0C4D	 4-12	# TELUGU LETTER BA
 always   \x0C2D\x0C4D  4-45	# TELUGU LETTER BHA
 always   \x0C2E\x0C4D	 4-134	# TELUGU LETTER MA
@@ -208,7 +219,7 @@ before TeluguVowel always   \x0C27	2346-1	# TELUGU LETTER DHA
 before TeluguVowel always   \x0C28	1345-1	# TELUGU LETTER NA
 
 before TeluguVowel always   \x0C2A	1234-1	# TELUGU LETTER PA
-before TeluguVowel always   \x0C2B	235-1	# TELUGU LETTER PHA
+before TeluguVowel always   \x0C2B	124-1	# TELUGU LETTER PHA
 before TeluguVowel always   \x0C2C	12-1-1	# TELUGU LETTER BA
 before TeluguVowel always   \x0C2D	45-1	# TELUGU LETTER BHA
 before TeluguVowel always   \x0C2E	134-1	# TELUGU LETTER MA

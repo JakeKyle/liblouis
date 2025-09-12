@@ -18,10 +18,10 @@
 # License along with liblouis. If not, see
 # <http://www.gnu.org/licenses/>.
 
-# This table is built and maintained under an activity of Braille Council of India
+# This table was built and maintained under an activity of Braille Council of India and then modified after release of new Bharti braille code which was released on January 4, 2025
 # Contributors: Dipendra Manocha, Sreeja, Dinesh Kaushal, Mesar Hameed
-# Last updated on May 5, 2014
-# To report any bugs or any suggestion, please write to d@saksham.org and sreeja.param@gmail.com
+# Last updated on February 14, 2025
+# To report any bugs or any suggestion, please write to dipendra@saksham.org and sreeja@saksham.org
 
 include braille-patterns.cti
   
@@ -39,7 +39,7 @@ letter	\x0B08	35	# ORIYA LETTER II
 letter	\x0B09	136	# ORIYA LETTER U
 letter	\x0B0A	1256	# ORIYA LETTER UU
 letter	\x0B0B	5-1235	# ORIYA LETTER VOCALIC R
-letter	\x0B0C	5-1235	# ORIYA LETTER VOCALIC L
+letter	\x0B0C	5-123	# ORIYA LETTER VOCALIC L
 letter	\x0B0F	15	# ORIYA LETTER E
 letter	\x0B10	34	# ORIYA LETTER Al
 letter	\x0B13	135	# ORIYA LETTER O
@@ -72,7 +72,7 @@ letter	\x0B27	2346	# ORIYA LETTER DHA
 letter	\x0B28	1345	# ORIYA LETTER NA
 
 letter	\x0B2A	1234	# ORIYA LETTER PA
-letter	\x0B2B	235	# ORIYA LETTER PHA
+letter	\x0B2B	124	# ORIYA LETTER PHA
 letter	\x0B2C	12	# ORIYA LETTER BA - 0B35 ORIYA letter  va
 letter	\x0B2D	45	# ORIYA LETTER BHA
 letter	\x0B2E	134	# ORIYA LETTER MA
@@ -87,13 +87,16 @@ letter	\x0B37	12346	# ORIYA LETTER SSA
 letter	\x0B38	234	# ORIYA LETTER SA
 letter	\x0B39	125	# ORIYA LETTER HA
 
-letter    \x0B3E     345	# ORIYA VOWEL SIGN AA, ORIYA VOWEL SIGN UU, ORIYA VOWEL SIGN VOCALIC ORIYA VOWEL SIGN VOCALIC RR
+letter    \x0B3C     5	# ORIYA NUKHTA
+letter    \x0B3D     2	# ORIYA Avagraha
+
+letter    \x0B3E     345	# ORIYA VOWEL SIGN AA
 letter	\x0B3F	24	# ORIYA VOWEL SIGN I
 letter	\x0B40	35	# ORIYA VOWEL SIGN II
 letter	\x0B41	136	# ORIYA VOWEL SIGN U
 letter	\x0B42	1256	# ORIYA VOWEL SIGN UU
 letter	\x0B43	5-1235	# ORIYA VOWEL SIGN VOCALIC R
-letter	\x0B44	5-1235	# ORIYA VOWEL SIGN VOCALIC RR
+letter	\x0B44	6-1235	# ORIYA VOWEL SIGN VOCALIC RR
 letter	\x0B47	15	# ORIYA VOWEL SIGN E (stands to the left of the consonant)
 letter	\x0B48	34	# ORIYA VOWEL SIGN AI (stands to the left of the consonant) = 0B47 AND 0B56
 letter	\x0B4B	135	# ORIYA VOWEL SIGN O = 0B47 AND 0B3E
@@ -104,9 +107,9 @@ letter	\x0B57	246	# ORIYA AU LENGTH MARK
 letter	\x0B5C	12456	# ORIYA LETTER RRA = dda =0B21 and 0B3C
 letter	\x0B5D	5-12456	# ORIYA LETTER RHA= ddha =0B22 and 0B3C
 letter	\x0B5F	26	# ORIYA LETTER YYA = ya
-letter	\x0B60	5-1235	# ORIYA LETTER VOCALIC RR
-letter	\x0B61	5-123	# ORIYA LETTER VOCALIC LL
-letter	\x0B62	6-1235	# ORIYA VOWEL SIGN VOCALIC L
+letter	\x0B60	6-1235	# ORIYA LETTER VOCALIC RR
+letter	\x0B61	6-123	# ORIYA LETTER VOCALIC LL
+letter	\x0B62	5-1235	# ORIYA VOWEL SIGN VOCALIC L
 letter	\x0B63	6-123	# ORIYA VOWEL SIGN VOCALIC LL
 
 # Digits
@@ -150,7 +153,7 @@ always	\x0B27\x0B4D	4-2346	# ORIYA LETTER DHA
 always	\x0B28\x0B4D	4-1345	# ORIYA LETTER NA
 
 always	\x0B2A\x0B4D	4-1234	# ORIYA LETTER PA
-always	\x0B2B\x0B4D	4-235	# ORIYA LETTER PHA
+always	\x0B2B\x0B4D	4-124	# ORIYA LETTER PHA
 always	\x0B2C\x0B4D	4-12	# ORIYA LETTER BA - 0B35 ORIYA letter  va
 always	\x0B2D\x0B4D	4-45	# ORIYA LETTER BHA
 always	\x0B2E\x0B4D	4-134	# ORIYA LETTER MA
@@ -210,7 +213,7 @@ before OriyaVowel always	\x0B27 	  2346-1	# ORIYA LETTER DHA
 before OriyaVowel always	\x0B28 	  1345-1	# ORIYA LETTER NA
 
 before OriyaVowel always	\x0B2A 	  1234-1	# ORIYA LETTER PA
-before OriyaVowel always	\x0B2B 	  235-1	# ORIYA LETTER PHA
+before OriyaVowel always	\x0B2B 	  124-1	# ORIYA LETTER PHA
 before OriyaVowel always	\x0B2C 	  12-1	# ORIYA LETTER BA - 0B35 ORIYA letter  va
 before OriyaVowel always	\x0B2D 	  45-1	# ORIYA LETTER BHA
 before OriyaVowel always	\x0B2E 	  134-1	# ORIYA LETTER MA

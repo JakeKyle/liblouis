@@ -24,10 +24,10 @@
 # License along with liblouis. If not, see
 # <http://www.gnu.org/licenses/>.
 
-# This table is built and maintained under an activity of Braille Council of India
+# This table was built and maintained under an activity of Braille Council of India and then modified after release of new Bharti braille code which was released on January 4, 2025
 # Contributors: Dipendra Manocha, Sreeja, Dinesh Kaushal, Mesar Hameed, Jake Kyle (Compass Braille, UK)
-# Updated on May 23, 2022
-# To report any bugs or any suggestion, please write to dmanocha@daisy.org and sreeja.param@gmail.com
+# Updated on January 30, 2025
+# To report any bugs or any suggestion, please write to dipendra@saksham.org and sreeja@saksham.org
 
 include braille-patterns.cti
 
@@ -42,8 +42,8 @@ postpunc \x0964 256
 postpunc \x0964\x0964 256-256
 
 # Signs
-letter \x0A01 56 # GURUMUKHI SIGN ADAK BINDI
-letter \x0A02 3 # GURUMUKHI SIGN BINDI
+letter \x0A01 3 # GURUMUKHI SIGN ADAK BINDI
+letter \x0A02 56 # GURUMUKHI SIGN BINDI
 letter \x0A03 6 # GURUMUKHI SIGN VISARGA
 
 # Vowel letters
@@ -64,7 +64,7 @@ letter \x0A16 46 # GURUMUKHI LETTER KHA
 letter \x0A17 1245 # GURUMUKHI LETTER GA
 letter \x0A18 126 # GURUMUKHI LETTER GHA
 letter \x0A19 346 # GURUMUKHI LETTER NGA
-letter \x0A1A 14 # GURUMUKHI LETTER CA
+letter \x0A1A 14 # GURUMUKHI LETTER CHA
 letter \x0A1B 16 # GURUMUKHI LETTER CHA
 letter \x0A1C 245 # GURUMUKHI LETTER JA
 letter \x0A1D 356 # GURUMUKHI LETTER JHA
@@ -80,7 +80,7 @@ letter \x0A26 145 # GURUMUKHI LETTER DA
 letter \x0A27 2346 # GURUMUKHI LETTER DHA
 letter \x0A28 1345 # GURUMUKHI LETTER NA
 letter \x0A2A 1234 # GURUMUKHI LETTER PA
-letter \x0A2B 235 # GURUMUKHI LETTER PHA
+letter \x0A2B 124 # GURUMUKHI LETTER PHA
 letter \x0A2C 12 # GURUMUKHI LETTER BA
 letter \x0A2D 45 # GURUMUKHI LETTER BHA
 letter \x0A2E 134 # GURUMUKHI LETTER MA
@@ -92,8 +92,6 @@ letter \x0A35 1236 # GURUMUKHI LETTER VA
 letter \x0A36 146 # GURUMUKHI LETTER SHA - 0A38 AND 0A3C
 letter \x0A38 234 # GURUMUKHI LETTER SA
 letter \x0A39 125 # GURUMUKHI LETTER HA
-
-attribute letter \x0A3C letter \x0A3C # GURMUKHI SIGN NUKTA: pairin bindi
 
 # Vowel Signs
 letter \x0A3E 345 # GURUMUKHI VOWEL SIGN AA= kanna
@@ -109,11 +107,19 @@ letter \x0A4C 246 # GURUMUKHI VOWEL SIGN AU = KANAURA
 letter \x0A4D 4 # GURMUKHI SIGN VIRAMA
 
 # Additional letters
-letter \x0A59 1346 # GURUMUKHI LETTER KHHA = 0A16 AND 0A3C
+letter \x0A59 5-46 # GURUMUKHI LETTER KHHA = 0A16 AND 0A3C
 letter \x0A5A 5-1245 # GURMUKHI LETTER GHHA
-letter \x0A5B 1356 # GURUMUKHI LETTER ZA = 0A1C AND 0A3C
+letter \x0A5B 5-245 # GURUMUKHI LETTER ZA = 0A1C AND 0A3C
 letter \x0A5C 12456 # GURUMUKHI LETTER RRA
-letter \x0A5E 124 # GURUMUKHI LETTER FA
+always \x0A5C\x0A4D\x0A39 5-12456 # GURUMUKHI LETTER RRA
+letter \x0A5E 5-124 # GURUMUKHI LETTER FA
+
+always \x0A16\x0A3C 5-46 # GURUMUKHI LETTER KHHA = 0A16 AND 0A3C
+always \x0A17\x0A3C 5-1245 # GURMUKHI LETTER GHHA
+always \x0A1C\x0A3C 5-245 # GURUMUKHI LETTER ZA = 0A1C AND 0A3C
+always \x0A21\x0A3C 12456 # GURUMUKHI LETTER RRA
+always \x0A2B\x0A3C 5-124 # GURUMUKHI LETTER FA
+
 
 # Digits
 digit \x0A66 245 # GURUMUKHI DIGIT ZERO
@@ -147,12 +153,12 @@ always \x0A70 56 # TIPPI - to override ADAK BINDI in backtranslation
 always \x0A71 4 # ADDAK - to override virama in backtranslation
 
 # Compound letters
-noback always \x0A16\x0A3C 1346 # KHA + NUKTA = KHHA (same as \x0A59)
+noback always \x0A16\x0A3C 5-46 # KHA + NUKTA = KHHA (same as \x0A59)
 noback always \x0A17\x0A3C 5-1245 # GA + NUKTA = GHHA
-noback always \x0A1C\x0A3C 1356 # JA + NUKTA = ZA (same as \x0A5B)
+noback always \x0A1C\x0A3C 5-245 # JA + NUKTA = ZA (same as \x0A5B)
 always \x0A24\x0A3C 5-2345 # TA + NUKTA
-noback always \x0A2B\x0A3C 124 # PHA + NUKTA = FA (same as \x0A5E)
-noback always \x0A2B\x0A3F\x0A3C 124-24 # PHA + SIGN I + NUKTA
+noback always \x0A2B\x0A3C 5-124 # PHA + NUKTA = FA (same as \x0A5E)
+noback always \x0A2B\x0A3F\x0A3C 5-124-24 # PHA + SIGN I + NUKTA
 noback always \x0A32\x0A3C 456 # LA + NUKTA = LLA (same as \x0A33)
 noback always \x0A38\x0A3C 146 # SA + NUKTA = SHA (same as \x0A36)
 
@@ -274,7 +280,7 @@ always \x0A71\x0A28 4-1345 # ADDAK + NA
 always \x0A71\x0A26\x0A3E 4-145-345 # ADDAK + DA + AA
 always \x0A71\x0A27 4-2346 # ADDAK + DHA
 midendword \x0A71\x0A2A 4-1234 # ADDAK + PA
-always \x0A71\x0A2B 4-235 # ADDAK + PHA
+always \x0A71\x0A2B 4-124 # ADDAK + PHA
 always \x0A71\x0A2C 4-12 # ADDAK + BA
 midendword \x0A71\x0A2D 4-45 # ADDAK + BHA
 endword \x0A71\x0A30 4-1235 # ADDAK + RA
@@ -315,7 +321,7 @@ always \x0A27\x0A4D 4-2346 # GURUMUKHI LETTER DHA
 always \x0A28\x0A4D 4-1345 # GURUMUKHI LETTER NA
 
 always \x0A2A\x0A4D 4-1234 # GURUMUKHI LETTER PA
-always \x0A2B\x0A4D 4-235 # GURUMUKHI LETTER PHA
+always \x0A2B\x0A4D 4-124 # GURUMUKHI LETTER PHA
 always \x0A2C\x0A4D 4-12 # GURUMUKHI LETTER BA
 always \x0A2D\x0A4D 4-45 # GURUMUKHI LETTER BHA
 always \x0A2E\x0A4D 4-134 # GURUMUKHI LETTER MA
@@ -329,10 +335,10 @@ always \x0A36\x0A4D 4-146 # GURUMUKHI LETTER SHA - 0A38 AND 0A3C
 always \x0A38\x0A4D 4-234 # GURUMUKHI LETTER SA
 always \x0A39\x0A4D 4-125 # GURUMUKHI LETTER HA
 
-always \x0A59\x0A4D 4-46 # GURUMUKHI LETTER KHHA = 0A16 AND 0A3C
-always \x0A5B\x0A4D 4-245 # GURUMUKHI LETTER ZA = 0A1C AND 0A3C
+always \x0A59\x0A4D 4-5-46 # GURUMUKHI LETTER KHHA = 0A16 AND 0A3C
+always \x0A5B\x0A4D 4-5-245 # GURUMUKHI LETTER ZA = 0A1C AND 0A3C
 always \x0A5C\x0A4D 4-12456 # GURUMUKHI LETTER RRA
-always \x0A5E\x0A4D 4-235 # GURUMUKHI LETTER FA
+always \x0A5E\x0A4D 4-124 # GURUMUKHI LETTER FA
 always \x0A64\x0A4D 4-256 RESERVED- 0964 #DEVANAGARI DANDA
 always \x0A65\x0A4D 4-256-256 RESERVED- 0965 # DEVANAGARI DOUBLE DANDA
 
@@ -371,7 +377,7 @@ before GurumukiVowel always \x0A27 2346-1 # GURUMUKHI LETTER DHA
 before GurumukiVowel always \x0A28 1345-1 # GURUMUKHI LETTER NA
 
 before GurumukiVowel always \x0A2A 1234-1 # GURUMUKHI LETTER PA
-before GurumukiVowel always \x0A2B 235-1 # GURUMUKHI LETTER PHA
+before GurumukiVowel always \x0A2B 124-1 # GURUMUKHI LETTER PHA
 before GurumukiVowel always \x0A2C 12-1 # GURUMUKHI LETTER BA
 before GurumukiVowel always \x0A2D 45-1 # GURUMUKHI LETTER BHA
 before GurumukiVowel always \x0A2E 134-1 # GURUMUKHI LETTER MA
@@ -385,9 +391,9 @@ before GurumukiVowel always \x0A36 146-1 # GURUMUKHI LETTER SHA - 0A38 AND 0A3C
 before GurumukiVowel always \x0A38 234-1 # GURUMUKHI LETTER SA
 before GurumukiVowel always \x0A39 125-1 # GURUMUKHI LETTER HA
 
-before GurumukiVowel always \x0A59 46-1 # GURUMUKHI LETTER KHHA= 0A16 AND 0A3C
-before GurumukiVowel always \x0A5B 245-1 # GURUMUKHI LETTER ZA = 0A1C AND 0A3C
+before GurumukiVowel always \x0A59 5-46-1 # GURUMUKHI LETTER KHHA= 0A16 AND 0A3C
+before GurumukiVowel always \x0A5B 5-245-1 # GURUMUKHI LETTER ZA = 0A1C AND 0A3C
 before GurumukiVowel always \x0A5C 12456-1 # GURUMUKHI LETTER RRA
-before GurumukiVowel always \x0A5E 235-1 # GURUMUKHI LETTER FA
+before GurumukiVowel always \x0A5E 5-124-1 # GURUMUKHI LETTER FA
 before GurumukiVowel always \x0A64 256-1 RESERVED- 0964 #DEVANAGARI DANDA
 before GurumukiVowel always \x0A65 256-256-1 RESERVED- 0965 # DEVANAGARI DOUBLE DANDA
