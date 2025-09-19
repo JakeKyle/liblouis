@@ -42,8 +42,8 @@ postpunc \x0964 256
 postpunc \x0964\x0964 256-256
 
 # Signs
-letter \x0A01 3 # GURUMUKHI SIGN ADAK BINDI
-letter \x0A02 56 # GURUMUKHI SIGN BINDI
+letter \x0A01 3 # GURUMUKHI SIGN BINDI
+letter \x0A02 56 # GURUMUKHI SIGN Tippi
 letter \x0A03 6 # GURUMUKHI SIGN VISARGA
 
 # Vowel letters
@@ -198,7 +198,7 @@ sufword \x0A06\x0A13 345-135 # LETTER AA + LETTER OO
 sufword \x0A06\x0A09 345-136 # LETTER AA + LETTER U
 sufword \x0A07\x0A09 24-136 # LETTER I + LETTER U
 sufword \x0A10\x0A09 34-136 # LETTER AI +LETTER U
-midendword \x0A3E\x0A02\x0A09 345-3-136 # SIGN AA + BINDI + LETTER U
+midendword \x0A3E\x0A02\x0A09 345-56-136 # SIGN AA + BINDI + LETTER U
 midendword \x0A3E\x0A0F 345-15 # SIGN AA + LETTER EE
 midendword \x0A3E\x0A07 345-24 # SIGN AA + LETTER I
 midendword \x0A3E\x0A08 345-35 # SIGN AA + LETTER II
@@ -259,7 +259,7 @@ always \x0A32\x0A13 123-1-135 # LETTER LA + LETTER OO
 word \x0A32\x0A08 123-1-35 # LETTER LA + LETTER II
 
 # for dot 3 backtranslation to bindi
-always \x0A02 3 # GURUMUKHI SIGN BINDI
+always \x0A01 3 # GURUMUKHI SIGN BINDI
 
 # when dot 4 is \x0A71 'Addak' in backtranslation
 midendword \x0A71\x0A15 4-13 # ADDAK + KA
