@@ -24,4 +24,13 @@
 # To report any bugs or any suggestion, please write to d@saksham.org and sreeja.param@gmail.com
 
 include gujarati.cti
+
+# extra definitions needed
+sign @ 4
+
+# rules to override en-in-g1.ctb
+always . 256
+midnum . 256
+
 include en-in-g1.ctb
+
