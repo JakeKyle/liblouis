@@ -27,10 +27,26 @@ include gujarati.cti
 
 # extra definitions needed
 sign @ 4
+punctuation ) 2356
+nofor sign ' 6-236
+midword . 256
 
-# rules to override en-in-g1.ctb
-always . 256
-midnum . 256
+# Following needed to override rules in en-in-g1.ctb table for successful backtranslation
+nofor punctuation . 256 # to override digit 4 in en-in-g1.ctb table
+nofor always \x0A9D 356 # JHA - needed to override close double quotes
+nofor always \x0A96 46 # KHA - needed to override . (period) in en-in-g1.ctb table
+nofor always \x0AAD\x0AB0 45-1235 # BHA + RA - needed to override ® in en-in-g1.ctb table
+nofor always \x0A82\x0AA6\x0A97 56-145-1245 # ANUSVARA + DA + GA - needed to override ° degree sign
+nofor always \x0A82\x0029 56-2356 # ANUSVARA + CLOSE PARENTHESES - needed to override { open curly brackets
+nofor always \x0A96\x002C 46-2 # KHA + COMMA - needed to override > close angled brackets
+nofor always \x0A96\x0AAE 46-134 # KHA + MA - needed to overide µ micro
 
 include en-in-g1.ctb
+
+
+# extra rules not in en-in-g1.ctb needed
+compbrl .co.uk
+compbrl .net
+compbrl .in
+compbrl @
 
